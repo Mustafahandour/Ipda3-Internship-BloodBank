@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ic_bg">
+
+
+    <LinearLayout
+        style="@style/margin_padding_Style"
+        android:id="@+id/post_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.SearchView
+
+            android:id="@+id/post_sv_fragment"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="@dimen/dimens_40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/post_search_box_shape"/>
+        <Spinner
+            android:id="@+id/post_search_sp_fragment"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dimens_40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/post_spinner_shap"/>
+    </LinearLayout>
+   <androidx.recyclerview.widget.RecyclerView
+
+       android:id="@+id/post_fragment_rv_data_list"
+       android:layout_below="@+id/post_search_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+       />
+
+
+</LinearLayout>

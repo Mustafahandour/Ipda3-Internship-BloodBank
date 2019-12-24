@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ic_bg">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        style="@style/margin_padding_Style"
+        android:layout_width="@dimen/dimen_200dp"
+        android:layout_height="@dimen/dimen_200dp"
+        android:background="@drawable/ic_logo"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/margin_padding_Style"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimens_50dp"
+            android:layout_weight="2"
+            android:drawableStart="@drawable/ic_phone_black"
+            android:drawablePadding="@dimen/dimens_m"
+            android:gravity="center_vertical"
+            android:text="@string/phone_c"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/contact_us_fragment_tv_phone"
+            style="@style/margin_padding_Style"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimens_50dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:hint="01024990445"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/margin_padding_Style"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimens_50dp"
+            android:layout_weight="2"
+            android:drawableStart="@drawable/ic_contact_us"
+            android:drawablePadding="@dimen/dimens_m"
+            android:gravity="center_vertical"
+            android:text="@string/email_c"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/contact_us_fragment_tv_email"
+            style="@style/margin_padding_Style"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimens_50dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:hint="name@name.com"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/contact_us_fragment_bt_facebook"
+
+            style="@style/margin_padding_Style"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimens_50dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_facebook"
+            android:drawablePadding="@dimen/dimens_m"
+            android:gravity="center_vertical"
+            android:text="@string/email_c"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/contact_us_fragment_bt_twitter"
+
+            style="@style/margin_padding_Style"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimens_50dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_twitter"
+            android:drawablePadding="@dimen/dimens_m"
+            android:gravity="center_vertical"
+            android:text="@string/email_c"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/contact_us_fragment_bt_youtube"
+
+            style="@style/margin_padding_Style"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimens_50dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_youtube"
+            android:drawablePadding="@dimen/dimens_m"
+            android:gravity="center_vertical"
+            android:text="@string/email_c"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/contact_us_fragment_bt_instgram"
+
+            style="@style/margin_padding_Style"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimens_50dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_instgram"
+            android:drawablePadding="@dimen/dimens_m"
+            android:gravity="center_vertical"
+            android:text="@string/email_c"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/contact_us_fragment_bt_whatsApp"
+
+            style="@style/margin_padding_Style"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimens_50dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_whatsapp"
+            android:drawablePadding="@dimen/dimens_m"
+            android:gravity="center_vertical"
+            android:text="@string/email_c"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_70dp"
+        android:gravity="center"
+        android:text="Contact Us"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dimens_m"
+        android:background="@color/deep_blue"/>
+
+    <EditText
+        android:id="@+id/contact_us_fragment_et_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_50dp"
+        style="@style/margin_padding_Style"
+        android:hint="@string/name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/contact_us_fragment_et_ph"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_50dp"
+        style="@style/margin_padding_Style"
+        android:hint="@string/phone"
+        android:inputType="phone" />
+    <EditText
+        android:id="@+id/contact_us_fragment_et_message"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_100dp"
+        style="@style/margin_padding_Style"
+        android:hint="@string/massege"
+        />
+    <Button
+        android:id="@+id/contact_us_fragment_bt_send"
+        style="@style/buttonStyle"
+        android:layout_marginBottom="@dimen/dimens_mmm"
+        android:background="@color/deep_blue"
+        android:text="@string/send"/>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/donation_fragment_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/fragment_donation_sp_blood_type"
+            style="@style/margin_padding_Style"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimens_50dp"
+            android:layout_weight="4"
+            android:background="@drawable/donation_spinner_shap" />
+
+        <Spinner
+            android:id="@+id/fragment_donation_sp_city"
+            style="@style/margin_padding_Style"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimens_50dp"
+            android:layout_weight="3"
+            android:background="@drawable/donation_spinner_shap" />
+
+        <Button
+            android:id="@+id/search_bt"
+            android:layout_width="@dimen/dimens_50dp"
+            android:layout_height="@dimen/dimens_50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimens_m"
+            android:layout_marginEnd="@dimen/dimens_mmm"
+            android:background="@drawable/donation_search_button"
+            android:drawableStart="@drawable/ic_search_solid"
+            android:paddingStart="@dimen/dimens_mm" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/donation_fragment_ll"
+        android:id="@+id/donation_fragment_rv_request"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimens_mm" />
+    <ImageView
+        android:id="@+id/donation_fragment_iv_new_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/dimens_ll"
+        android:layout_marginBottom="@dimen/dimens_ll"
+        android:background="@drawable/ic_add_blood_request"
+       android:clickable="true" />
+</RelativeLayout>

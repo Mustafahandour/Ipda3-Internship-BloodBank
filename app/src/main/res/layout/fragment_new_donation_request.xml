@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/register_create_account_tv_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_70dp"
+            android:background="@drawable/edit_t_shape"
+            android:gravity="center"
+            android:text="@string/donate_request"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/donate_request_fragment_et_name"
+            style="@style/editTextStyle"
+            android:hint="@string/name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/donate_request_fragment_et_age"
+            style="@style/editTextStyle"
+            android:hint="@string/age"
+            android:inputType="number" />
+        <Spinner
+            android:id="@+id/donate_request_fragment_sp_blood_type"
+            style="@style/margin_padding_Style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_50dp" />
+        <EditText
+            android:id="@+id/donate_request_fragment_et_bag_number"
+            style="@style/editTextStyle"
+            android:hint="@string/bags_number"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/donate_request_fragment_et_hospital_name"
+            style="@style/editTextStyle"
+            android:hint="@string/hospital_name"
+            android:inputType="text" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimens_mmm">
+
+        <TextView
+            android:id="@+id/donate_request_fragment_tv_hospital_address"
+            android:background="@color/cardview_light_background"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="@dimen/dimens_50dp"
+            style="@style/margin_padding_Style"
+            android:layout_marginBottom="@dimen/dimens_m"
+            android:hint="@string/hospital_address"
+            android:gravity="center_vertical"/>
+            <ImageButton
+                android:id="@+id/donate_request_fragment_ib_hospital_map_location"
+                style="@style/margin_padding_Style"
+                android:layout_marginBottom="@dimen/dimens_m"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/dimens_50dp"
+                android:background="@drawable/ic_location"
+                />
+        </LinearLayout>
+        <Spinner
+            android:id="@+id/donate_request_fragment_sp_government"
+
+            style="@style/margin_padding_Style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_50dp" />
+
+        <Spinner
+            android:id="@+id/donate_request_fragment_sp_city"
+
+            style="@style/margin_padding_Style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_50dp" />
+
+        <EditText
+            android:id="@+id/donate_request_fragment_et_phone"
+            style="@style/editTextStyle"
+            android:hint="@string/phone"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/donate_request_fragment_et_notes"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_100dp"
+            style="@style/margin_padding_Style"
+            android:hint="@string/notes"
+            />
+        <Button
+            android:id="@+id/donate_request_fragment_bt_send_request"
+            style="@style/buttonStyle"
+            android:layout_marginBottom="@dimen/dimens_mmm"
+            android:background="@color/deep_blue"
+            android:text="@string/send_request"/>
+
+    </LinearLayout>
+</ScrollView>

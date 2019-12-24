@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_main">
+
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.ghandour.bbank.view.fragment.homeCycle.ui.notification.NotificationFragment"
+        android:label="@string/notification"
+        tools:layout="@layout/fragment_notification" />
+
+    <fragment
+        android:id="@+id/nav_main"
+        android:name="com.ghandour.bbank.view.fragment.homeCycle.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_my_profile"
+        android:name="com.ghandour.bbank.view.fragment.homeCycle.ui.myProfile.MyProfileFragment"
+        android:label="@string/my_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_notification_setting"
+        android:name="com.ghandour.bbank.view.fragment.homeCycle.ui.notification.NotificationSettingFragment"
+        android:label="@string/notification_setting"
+        tools:layout="@layout/fragment_notification_setting" />
+
+    <fragment
+        android:id="@+id/nav_favorite"
+        android:name="com.ghandour.bbank.view.fragment.homeCycle.ui.favorite.FavoriteFragment"
+        android:label="@string/favorite"
+        tools:layout="@layout/fragment_favourite" />
+
+    <fragment
+        android:id="@+id/nav_use_guid"
+        android:name="com.ghandour.bbank.view.fragment.homeCycle.ui.guideUse.GuideUseFragment"
+        android:label="@string/use_guid"
+        tools:layout="@layout/fragment_guide_use" />
+
+    <fragment
+        android:id="@+id/nav_about_app"
+        android:name="com.ghandour.bbank.view.fragment.homeCycle.ui.aboutApp.AboutAppFragment"
+        android:label="@string/about_app"
+        tools:layout="@layout/fragment_about_app" />
+
+    <fragment
+        android:id="@+id/nav_contact_us"
+        android:name="com.ghandour.bbank.view.fragment.homeCycle.ui.ContactUsFragment"
+        android:label="@string/contact_us"
+        tools:layout="@layout/fragment_contact_us" />
+
+    <fragment
+        android:id="@+id/newBloodRequestFragment"
+        android:name="com.ghandour.bbank.view.fragment.homeCycle.NewBloodRequestFragment"
+        android:label="@string/donate_request"
+        tools:layout="@layout/fragment_new_donation_request" />
+
+    <fragment
+        android:id="@+id/donationDetailsFragment"
+        android:name="com.ghandour.bbank.view.fragment.homeCycle.DonationDetailsFragment"
+        android:label="@string/donation_details"
+        tools:layout="@layout/fragment_details_donation" />
+
+
+</navigation>

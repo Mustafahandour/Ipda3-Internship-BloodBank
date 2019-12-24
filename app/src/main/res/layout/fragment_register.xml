@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/register_create_account_tv_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_70dp"
+            android:background="@drawable/edit_t_shape"
+            android:gravity="center"
+            android:text="@string/create_new_account"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/register_name_account_et_fragment"
+            style="@style/editTextStyle"
+            android:hint="@string/name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/register_email_account_et_fragment"
+            style="@style/editTextStyle"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/register_birthday_et_fragment"
+            style="@style/editTextStyle"
+            android:drawableEnd="@drawable/ic_calendar_alt_solid"
+            android:hint="@string/birthday_date"
+            android:gravity="center_vertical"
+            android:inputType="date"
+            android:clickable="true"/>
+
+        <Spinner
+            android:id="@+id/register_blood_type_sp_fragment"
+            style="@style/margin_padding_Style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_50dp" />
+
+        <TextView
+            android:id="@+id/register_last_donate_date_et_fragment"
+            style="@style/editTextStyle"
+            android:drawableEnd="@drawable/ic_calendar_alt_solid"
+            android:gravity="center_vertical"
+            android:hint="@string/last_donate_date"
+            android:clickable="true"/>
+
+        <Spinner
+            android:id="@+id/register_governorate_sp_fragment"
+
+            style="@style/margin_padding_Style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_50dp" />
+
+        <Spinner
+            android:id="@+id/register_cities_sp_fragment"
+
+            style="@style/margin_padding_Style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_50dp" />
+
+        <EditText
+            android:id="@+id/register_phone_et_fragment"
+            style="@style/editTextStyle"
+            android:hint="@string/phone"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/password_et_register_fragment"
+            style="@style/editTextStyle"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/password_confirm_et_register_fragment"
+            style="@style/editTextStyle"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/register_bt_login_fragment"
+            style="@style/buttonStyle"
+            android:layout_marginBottom="@dimen/dimens_mmm"
+            android:background="@color/deep_blue"
+            android:text="@string/register" />
+    </LinearLayout>
+
+</ScrollView>

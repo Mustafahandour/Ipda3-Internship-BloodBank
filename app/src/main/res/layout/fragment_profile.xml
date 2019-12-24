@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/ic_bg"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <EditText
+        android:id="@+id/profile_name_account_et_fragment"
+        style="@style/editTextStyle"
+        android:hint="@string/name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/profile_email_account_et_fragment"
+        style="@style/editTextStyle"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/profile_birthday_et_fragment"
+        style="@style/editTextStyle"
+        android:drawableEnd="@drawable/ic_calendar_alt_solid"
+        android:hint="@string/birthday_date"
+        android:gravity="center_vertical"
+        android:inputType="date"
+        android:clickable="true"/>
+
+    <Spinner
+        android:id="@+id/profile_blood_type_sp_fragment"
+        style="@style/margin_padding_Style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_50dp" />
+
+    <TextView
+        android:id="@+id/profile_last_donate_date_et_fragment"
+        style="@style/editTextStyle"
+        android:drawableEnd="@drawable/ic_calendar_alt_solid"
+        android:gravity="center_vertical"
+        android:hint="@string/last_donate_date"
+        android:clickable="true"/>
+
+    <Spinner
+        android:id="@+id/profile_governorate_sp_fragment"
+
+        style="@style/margin_padding_Style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_50dp" />
+
+    <Spinner
+        android:id="@+id/profile_cities_sp_fragment"
+
+        style="@style/margin_padding_Style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_50dp" />
+
+    <EditText
+        android:id="@+id/profile_phone_et_fragment"
+        style="@style/editTextStyle"
+        android:hint="@string/phone"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/password_et_profile_fragment"
+        style="@style/editTextStyle"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/password_confirm_et_profile_fragment"
+        style="@style/editTextStyle"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/profile_bt_edit_fragment"
+        style="@style/buttonStyle"
+        android:layout_marginBottom="@dimen/dimens_mmm"
+        android:background="@color/deep_blue"
+        android:text="@string/edit" />
+</LinearLayout>
+
+</ScrollView>
